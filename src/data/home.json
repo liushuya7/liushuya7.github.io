@@ -39,6 +39,12 @@
       "showInContact": true
     },
     {
+      "name": "Notes",
+      "url": "https://liushuya7.github.io/wiki/",
+      "icon": "mdi:note-text-outline",
+      "showInContact": true
+    },
+    {
       "name": "Whatsapp",
       "url": "",
       "icon": "mdi:whatsapp",
