@@ -1,20 +1,29 @@
 [
   {
-    "title": "Awesome Website",
-    "description": "A high-performance, SEO-optimized web application built with modern frameworks to showcase technical expertise.",
+    "title": "Robot Teleoperation for Ultrasound Scanning",
+    "description": "Built a real-time remote teleoperation system with haptic feedback for robot-assisted ultrasound scanning.",
     "images": ["astro-01.webp", "astro-02.jpeg"],
-    "tech": ["Astro", "Tailwind"],
+    "tech": ["ROS2", "Real-Time Control", "Haptics", "Ultrasound Robotics"],
     "platforms": ["web"],
-    "link": "https://astro.build/themes/details/career-portfolio-data-driven-astro-ssg/",
-    "category": "Published Website"
+    "link": "#",
+    "category": "Medical Robotics"
   },
   {
-    "title": "Demo Mobile App",
-    "description": "A high-performance mobile application built with modern frameworks to showcase technical expertise.",
-    "images": ["astro-02.jpeg", "#"],
-    "tech": ["Flutter", "Dart", "REST API"],
-    "platforms": ["apple-ios", "android"],
-    "link": "https://github.com/nbakh16/career-portfolio-template",
-    "category": "Hobby"
+    "title": "ROS2 Framework for Orthopedic Surgical Robotics",
+    "description": "Developed modular ROS2 components for navigation, sensing, and control in robot-assisted orthopedic surgery.",
+    "images": ["astro-02.jpeg", "astro-01.webp"],
+    "tech": ["ROS2", "Robot Navigation", "Sensor Fusion", "Surgical Robotics"],
+    "platforms": ["web"],
+    "link": "#",
+    "category": "Research"
+  },
+  {
+    "title": "5-Axis Robotic Laser Cutting for Cranial Implants",
+    "description": "Designed and implemented a full robotic workflow including mechanical design, GUI, registration, and toolpath optimization for implant modification.",
+    "images": ["astro-01.webp", "astro-02.jpeg"],
+    "tech": ["KUKA iiwa", "Toolpath Planning", "3D Scanning", "C/C++", "Python"],
+    "platforms": ["web"],
+    "link": "#",
+    "category": "Surgical Automation"
   }
 ]

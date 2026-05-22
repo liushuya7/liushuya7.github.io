@@ -1,22 +1,22 @@
 {
-  "name": "John Doe",
-  "photoUrl": "favicon.svg",
-  "intro": "A brief, compelling introduction about who you are and what you do. Mention your core philosophy, your passion for building digital products, and your drive for creating efficient, high-impact solutions.",
-  "introHtml": "A brief, compelling introduction about who you are and what you do. Mention your core <span class='text-white font-bold'>philosophy</span>, your passion for building digital products, and your drive for creating <span class='text-white font-bold'>efficient</span>, <span class='text-white font-bold'>high-impact</span> solutions.",
-  "webpageTitle": "John Doe",
-  "resumeUrl": "https://example-files.online-convert.com/document/pdf/example.pdf",
+  "name": "Joshua Liu",
+  "photoUrl": "Joshua_Liu.png",
+  "intro": "Robotics research engineer with 10+ years of experience building medical and automation systems across teleoperation, sensing, and real-time control. I specialize in ROS2, robot integration, and turning complex prototypes into reliable systems.",
+  "introHtml": "Robotics research engineer with <span class='text-white font-bold'>10+ years</span> of experience building medical and automation systems across teleoperation, sensing, and real-time control. I specialize in <span class='text-white font-bold'>ROS2</span>, robot integration, and turning complex prototypes into reliable systems.",
+  "webpageTitle": "Joshua Liu | Robotics Engineer",
+  "resumeUrl": "/Joshua_Liu.pdf",
 
   "_comment": "Add your social links below. Leave the 'url' empty to hide the icon. Set 'showInContact' to true or false to control if it appears in the Contact section.",
   "socials": [
     {
       "name": "GitHub",
-      "url": "https://github.com/[YOUR_USER_NAME]",
+      "url": "https://github.com/liushuya7",
       "icon": "mdi:github",
       "showInContact": true
     },
     {
       "name": "LinkedIn",
-      "url": "https://linkedin.com/in/[YOUR_USER_NAME]",
+      "url": "https://www.linkedin.com/in/joshualiu/",
       "icon": "mdi:linkedin",
       "showInContact": true
     },
@@ -34,15 +34,15 @@
     },
     {
       "name": "Email",
-      "url": "mailto:your-mail@example.com",
+      "url": "mailto:joshua.liu@uark.edu",
       "icon": "mdi:email",
       "showInContact": true
     },
     {
       "name": "Whatsapp",
-      "url": "https://wa.me/[YOUR_WHATSAPP_NUMBER]",
+      "url": "",
       "icon": "mdi:whatsapp",
-      "showInContact": true
+      "showInContact": false
     },
     {
       "name": "Facebook",
@@ -52,9 +52,9 @@
     },
     {
       "name": "Messenger",
-      "url": "#",
+      "url": "",
       "icon": "mdi:facebook-messenger",
-      "showInContact": true
+      "showInContact": false
     },
     {
       "name": "Instagram",

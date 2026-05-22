@@ -1,35 +1,39 @@
 {
   "categories": [
     {
-      "title": "Mobile Development",
+      "title": "Robotics & Control",
       "skills": [
-        { "name": "Flutter", "level": 3, "icon": "skill-icons:flutter-dark" },
-        { "name": "Dart", "level": 3, "icon": "skill-icons:dart-dark" },
-        { "name": "Kotlin", "level": 1, "icon": "skill-icons:kotlin-dark" }
+        { "name": "ROS2", "level": 3, "icon": "mdi:robot-industrial" },
+        { "name": "Robot Operating System", "level": 3, "icon": "mdi:robot-industrial" },
+        { "name": "Teleoperation", "level": 3, "icon": "mdi:robot-industrial" },
+        { "name": "Real-Time Control", "level": 3, "icon": "mdi:sine-wave" }
       ]
     },
     {
-      "title": "Frontend",
+      "title": "Programming",
       "skills": [
-        { "name": "Astro", "level": 2, "icon": "skill-icons:astro" },
-        { "name": "HTML", "level": 2, "icon": "skill-icons:html" },
-        { "name": "CSS", "level": 2, "icon": "skill-icons:css" },
-        { "name": "Tailwind CSS", "level": 1, "icon": "skill-icons:tailwindcss-dark" }
+        { "name": "Python", "level": 3, "icon": "skill-icons:python-dark" },
+        { "name": "C/C++", "level": 3, "icon": "skill-icons:cpp" },
+        { "name": "Algorithm Development", "level": 3, "icon": "mdi:function" },
+        { "name": "GUI Development", "level": 2, "icon": "mdi:application-cog" }
       ]
     },
     {
-      "title": "Backend",
+      "title": "Automation & Integration",
       "skills": [
-        { "name": "FastAPI", "level": 2, "icon": "skill-icons:fastapi" },
-        { "name": "Python", "level": 2, "icon": "skill-icons:python-dark" },
-        { "name": "Firebase", "level": 3, "icon": "vscode-icons:file-type-firebase" }
+        { "name": "Siemens PLC", "level": 3, "icon": "mdi:factory" },
+        { "name": "System Integration", "level": 3, "icon": "mdi:source-branch" },
+        { "name": "HMI", "level": 2, "icon": "mdi:monitor-dashboard" },
+        { "name": "Computer Vision", "level": 2, "icon": "mdi:camera" }
       ]
     },
     {
-      "title": "Database",
+      "title": "Engineering & Prototyping",
       "skills": [
-        { "name": "SQLite", "level": 3, "icon": "skill-icons:sqlite" },
-        { "name": "PostgreSQL", "level": 2, "icon": "skill-icons:postgresql-dark" }
+        { "name": "SolidWorks", "level": 3, "icon": "mdi:ruler-square-compass" },
+        { "name": "CAD/CAM", "level": 3, "icon": "mdi:vector-polyline" },
+        { "name": "3D Printing", "level": 2, "icon": "mdi:printer-3d" },
+        { "name": "CNC Machining", "level": 2, "icon": "mdi:tools" }
       ]
     }
   ]

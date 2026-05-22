@@ -1,26 +1,66 @@
 [
   {
-    "company": "Demo Company",
-    "role": "Lead Software Engineer",
-    "period": "Oct 2025 - Present",
+    "company": "Institute of Integrative & Innovative Research, University of Arkansas",
+    "role": "Robotics Research Engineer",
+    "period": "Oct 2024 - Present",
     "type": "Full time job",
-    "description": "Leading cross-platform mobile development using Flutter and FastAPI. Focused on scalable system design and high-performance data processing.",
-    "skills": ["Leading", "Collaboration"]
+    "description": "Led development of real-time autonomous and teleoperation systems, including integrating F/T sensing, 3D camera, AR/VR, and haptics device. Built ROS2 software framework, encompassing real-time sensing, navigation, planning, and control for high-precision applications.",
+    "skills": ["Medical Robotics", "Teleoperation", "Haptics", "Real-time Control", "AR/VR"]
   },
   {
-    "company": "Demo Company",
-    "role": "Full-stack Developer",
-    "period": "Sep 2023 - Sep 2025",
+    "company": "Laboratory for Computational Sensing and Robotics, Johns Hopkins University",
+    "role": "Research Engineer",
+    "period": "Aug 2022 - Oct 2024",
     "type": "Full time job",
-    "description": "Specializing in Business Research Methods and Strategic HRM. Applying analytical frameworks to human capital management.",
-    "skills": ["React", "Node.js", "PostgreSQL", "Docker"]
+    "description": "Implemented sensor fusion, improved system architecture, and migrated legacy code to the ROS2 framework, improving modularity and maintainability of multiple robotic systems.",
+    "skills": ["Medical Robotics", "System Integration", "Simulation"]
   },
   {
-    "company": "Demo University of Tech",
-    "role": "BSc in Computer Science",
-    "period": "Jun 2020 - Jun 2024",
+    "company": "Hopkins Extreme Materials Institute, Johns Hopkins University",
+    "role": "Research Engineer",
+    "period": "Aug 2022 - Dec 2023",
+    "type": "Full time job",
+    "description": "Automated and simulated the workflow for materials testing using Siemens PLC-controlled conveyor systems with multiple UR robots. Deployed the automation of the laser shock subsystem and supported the X-ray subsystem integration.",
+    "skills": ["Siemens PLC", "OPC UA", "System Integration", "Simumatik"]
+  },
+  {
+    "company": "Laboratory of Biomechanical and Image Guided Surgical Systems, Johns Hopkins University",
+    "role": "Postdoctoral Research Fellow",
+    "period": "Oct 2021 - Aug 2022",
+    "type": "Research",
+    "description": "Developed robotic systems for spinal/hip surgery and designed capacitive shape sensors for dexterous continuum manipulators. Supported the medical imaging workflow for both image-guided orthopedic surgery and the development of a total-body photography system for skin lesion detection.",
+    "skills": ["Medical Robotics", "Sensor Design", "FBG Shape Sensing", "Capacitive Shape Sensing", "Calibration", "Medical Imaging"]
+  },
+  {
+    "company": "Johns Hopkins University",
+    "role": "Ph.D. in Mechanical Engineering",
+    "period": "Jan 2016 - Aug 2021",
     "type": "Student",
-    "description": "Specializing in Business Research Methods and Strategic HRM. Applying analytical frameworks to human capital management.",
-    "skills": ["C++", "OOP", "Problem Solving"]
+    "description": "Dissertation: Robotic Implant Modification for Neuroplastic Surgery\nAdvisor: Dr. Mehran Armand\n\nDesigned and implemented robotic systems for neuroplastic surgery implant modification, including a 5-axis laser cutting system with full-stack development (mechanical design, ROS2 control, registration, toolpath optimization). Built a miniature optical tracking & projection mapping system using RGB-D camera. Developed an automated pipeline using designed reattachable fiducial markers for intraoperative patient-CT registration and implant modification.",
+    "skills": ["Medical Robotics", "Surgical Navigation", "Patient-CT Registration", "Toolpath Optimization", "Computer Vision", "AR/VR"]
+  },
+  {
+    "company": "BMW Group",
+    "role": "Robotics Summer Intern",
+    "period": "May 2014 - Aug 2014",
+    "type": "Internship",
+    "description": "Contributed to ROS framework development for a self-driving car research platform and created an RViz visualization plugin for laser radar sensors.",
+    "skills": ["ROS", "C++", "Qt", "Sensors: LiDAR and cameras"]
+  },
+  {
+    "company": "Johns Hopkins University",
+    "role": "M.S.E. in Mechanical Engineering",
+    "period": "Aug 2013 - May 2015",
+    "type": "Student",
+    "description": "Graduate studies focused on robotics and mechanical system design.",
+    "skills": ["Mechanical Design", "Robotics", "Engineering Analysis"]
+  },
+  {
+    "company": "Changsha University of Science and Technology",
+    "role": "B.S. in Mechanical Engineering",
+    "period": "Sep 2009 - Jun 2013",
+    "type": "Student",
+    "description": "Undergraduate foundation in mechatronic system design and manufacturing.",
+    "skills": ["CAD/CAM", "SolidWorks", "C Programming"]
   }
 ]
