@@ -17,6 +17,7 @@ const isSlider = validImages.length > 1;
 ---
 
 <div class="project-card group relative bg-accent/5 border border-accent/10 rounded-2xl overflow-hidden hover:border-accent/40 transition-all duration-500">
+  <a href={`/projects/${project.slug}`} class="absolute inset-0 z-10 rounded-2xl" aria-label={`View ${project.title}`}></a>
   <div class="aspect-video overflow-hidden relative bg-background/50">
     <div class="absolute inset-0 bg-accent/10 group-hover:bg-transparent transition-colors z-10 pointer-events-none"></div>
     
@@ -56,9 +57,9 @@ const isSlider = validImages.length > 1;
         <span class="text-accent text-[10px] uppercase tracking-widest font-bold">{project.category}</span>
         <h3 class="text-xl font-heading font-bold text-maintext mt-1">{project.title}</h3>
       </div>
-      <a href={project.link} target="_blank" class="text-accent/75 hover:text-accent transition-colors">
-        <Icon name="mdi:open-in-new" class="w-6 h-6" />
-      </a>
+      <span class="relative z-20 text-accent/75 group-hover:text-accent transition-colors">
+        <Icon name="mdi:arrow-right" class="w-6 h-6 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+      </span>
     </div>
 
     <p class="text-subtext text-sm font-body line-clamp-3">

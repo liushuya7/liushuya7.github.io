@@ -1,0 +1,297 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { Icon } from 'astro-icon/components';
+import { Image } from 'astro:assets';
+import { resolveAssetImage } from '../../utils/images';
+import projectsData from '../../data/projects.json';
+
+export function getStaticPaths() {
+  return projectsData.map(project => ({
+    params: { slug: project.slug },
+    props: { project },
+  }));
+}
+
+interface ProjectVideo {
+  type: 'youtube' | 'local';
+  url: string;
+  title?: string;
+}
+
+interface ProjectLink {
+  label: string;
+  url: string;
+  icon: string;
+}
+
+interface Project {
+  slug: string;
+  title: string;
+  description: string;
+  fullDescription: string;
+  highlights: string[];
+  links: ProjectLink[];
+  images: string[];
+  videos: ProjectVideo[];
+  tech: string[];
+  platforms: string[];
+  link: string;
+  category: string;
+}
+
+const { project } = Astro.props as { project: Project };
+
+function extractYouTubeId(url: string): string {
+  const match = url.match(/(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+  return match?.[1] ?? '';
+}
+
+const optimizedImages = await Promise.all(
+  project.images.map((imgName: string) => resolveAssetImage(imgName))
+);
+const validImages = optimizedImages.filter(Boolean) as NonNullable<typeof optimizedImages[number]>[];
+
+type MediaItem =
+  | { kind: 'image'; src: NonNullable<typeof validImages[number]>; label: string }
+  | { kind: 'youtube'; videoId: string; label: string }
+  | { kind: 'local'; url: string; label: string };
+
+const mediaItems: MediaItem[] = [
+  ...validImages.map((src, i): MediaItem => ({ kind: 'image', src, label: `Image ${i + 1}` })),
+  ...(project.videos ?? []).flatMap((v, i): MediaItem[] => {
+    if (v.type === 'youtube') {
+      const videoId = extractYouTubeId(v.url);
+      if (!videoId) return [];
+      return [{ kind: 'youtube', videoId, label: v.title ?? `Video ${i + 1}` }];
+    }
+    return [{ kind: 'local', url: `/videos/${v.url}`, label: v.title ?? `Video ${i + 1}` }];
+  }),
+];
+
+const liveLinks = project.links.filter(l => l.url !== '#');
+---
+
+<Layout title={`${project.title} | Joshua Liu`}>
+  <div class="min-h-screen py-8 md:py-16">
+
+    <!-- Back Button -->
+    <div class="mb-10 reveal-item" style="animation-delay: 0ms;">
+      <a
+        href="/#projects"
+        class="inline-flex items-center gap-2 text-accent/60 hover:text-accent transition-colors text-sm font-body group"
+      >
+        <Icon name="mdi:arrow-left" class="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+        Back to Projects
+      </a>
+    </div>
+
+    <!-- Header -->
+    <div class="mb-10 reveal-item" style="animation-delay: 60ms;">
+      <span class="text-accent text-[10px] uppercase tracking-widest font-bold">{project.category}</span>
+      <h1 class="text-3xl md:text-5xl font-heading font-bold text-maintext mt-2 mb-5 leading-tight">
+        {project.title}
+      </h1>
+      <div class="flex flex-wrap gap-2">
+        {project.tech.map((t: string) => (
+          <span class="rounded-md text-[10px] px-3 py-1 bg-accent/5 border border-accent/20 text-accent/80">
+            {t}
+          </span>
+        ))}
+      </div>
+    </div>
+
+    <!-- Unified Media Gallery -->
+    {mediaItems.length > 0 && (
+      <div class="mb-14 reveal-item" style="animation-delay: 120ms;">
+
+        <!-- Main display -->
+        <div class="rounded-2xl overflow-hidden aspect-video border border-accent/10 mb-4 bg-background/50 relative">
+          {mediaItems.map((item, i) => (
+            <div
+              class={`gallery-item absolute inset-0 ${i === 0 ? '' : 'hidden'}`}
+              data-index={i}
+            >
+              {item.kind === 'image' && (
+                <Image
+                  src={item.src}
+                  alt={item.label}
+                  class="w-full h-full object-cover"
+                />
+              )}
+              {item.kind === 'youtube' && (
+                <iframe
+                  src={`https://www.youtube.com/embed/${item.videoId}?rel=0`}
+                  title={item.label}
+                  class="w-full h-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                  loading="lazy"
+                />
+              )}
+              {item.kind === 'local' && (
+                <video
+                  controls
+                  class="w-full h-full"
+                  preload="metadata"
+                >
+                  <source src={item.url} />
+                </video>
+              )}
+            </div>
+          ))}
+        </div>
+
+        <!-- Thumbnails -->
+        {mediaItems.length > 1 && (
+          <div class="grid grid-cols-4 gap-3">
+            {mediaItems.map((item, i) => (
+              <button
+                class={`gallery-thumb rounded-xl overflow-hidden aspect-video border transition-all duration-300 cursor-pointer relative ${i === 0 ? 'border-accent/50 opacity-100' : 'border-accent/10 opacity-50 hover:opacity-80'}`}
+                data-index={i}
+                aria-label={item.label}
+              >
+                {item.kind === 'image' && (
+                  <Image
+                    src={item.src}
+                    alt={item.label}
+                    class="w-full h-full object-cover pointer-events-none"
+                  />
+                )}
+                {item.kind === 'youtube' && (
+                  <>
+                    <img
+                      src={`https://img.youtube.com/vi/${item.videoId}/mqdefault.jpg`}
+                      alt={item.label}
+                      class="w-full h-full object-cover pointer-events-none"
+                    />
+                    <div class="absolute inset-0 flex items-center justify-center bg-black/30 pointer-events-none">
+                      <Icon name="mdi:play-circle" class="w-8 h-8 text-white/90" />
+                    </div>
+                  </>
+                )}
+                {item.kind === 'local' && (
+                  <div class="w-full h-full bg-accent/10 flex items-center justify-center pointer-events-none">
+                    <Icon name="mdi:play-circle-outline" class="w-8 h-8 text-accent/60" />
+                  </div>
+                )}
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
+    )}
+
+    <div class="grid md:grid-cols-3 gap-12">
+      <!-- Left: Overview + Highlights -->
+      <div class="md:col-span-2 space-y-12">
+
+        <!-- Overview -->
+        <div class="reveal-item" style="animation-delay: 180ms;">
+          <h2 class="text-xl font-heading font-bold text-maintext mb-4 flex items-center gap-3">
+            <span class="text-accent">/</span> Overview
+          </h2>
+          <p class="text-subtext font-body leading-relaxed text-sm md:text-base">
+            {project.fullDescription}
+          </p>
+        </div>
+
+        <!-- Key Highlights -->
+        {project.highlights.length > 0 && (
+          <div class="reveal-item" style="animation-delay: 240ms;">
+            <h2 class="text-xl font-heading font-bold text-maintext mb-4 flex items-center gap-3">
+              <span class="text-accent">/</span> Key Highlights
+            </h2>
+            <ul class="space-y-3">
+              {project.highlights.map((h: string) => (
+                <li class="flex items-start gap-3 text-subtext font-body text-sm md:text-base">
+                  <Icon name="mdi:check-circle-outline" class="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
+                  <span>{h}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+
+      <!-- Right: Links + Tech sidebar -->
+      <div class="space-y-8">
+
+        <!-- Links -->
+        {liveLinks.length > 0 && (
+          <div class="reveal-item" style="animation-delay: 300ms;">
+            <h2 class="text-sm font-heading font-bold text-maintext mb-3 uppercase tracking-widest">Links</h2>
+            <div class="flex flex-col gap-2">
+              {liveLinks.map((link: ProjectLink) => (
+                <a
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border border-accent/20 text-accent/80 hover:border-accent/60 hover:text-accent hover:bg-accent/5 transition-all text-sm font-body"
+                >
+                  <Icon name={link.icon} class="w-4 h-4" />
+                  {link.label}
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <!-- Tech Stack -->
+        <div class="reveal-item" style="animation-delay: 360ms;">
+          <h2 class="text-sm font-heading font-bold text-maintext mb-3 uppercase tracking-widest">Tech Stack</h2>
+          <div class="flex flex-wrap gap-2">
+            {project.tech.map((t: string) => (
+              <span class="rounded-md text-[10px] px-3 py-1 bg-accent/5 border border-accent/20 text-accent/80">
+                {t}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <!-- Category -->
+        <div class="reveal-item" style="animation-delay: 420ms;">
+          <h2 class="text-sm font-heading font-bold text-maintext mb-3 uppercase tracking-widest">Category</h2>
+          <span class="text-accent/70 font-body text-sm">{project.category}</span>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</Layout>
+
+<style>
+  .reveal-item {
+    opacity: 0;
+    transform: translateY(24px);
+    animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  @keyframes slideUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+<script>
+  const thumbs = document.querySelectorAll<HTMLButtonElement>('.gallery-thumb');
+  const items = document.querySelectorAll<HTMLElement>('.gallery-item');
+
+  thumbs.forEach(thumb => {
+    thumb.addEventListener('click', () => {
+      const idx = Number(thumb.dataset.index);
+
+      items.forEach(item => item.classList.add('hidden'));
+      items[idx]?.classList.remove('hidden');
+
+      thumbs.forEach(t => {
+        t.classList.remove('border-accent/50', 'opacity-100');
+        t.classList.add('border-accent/10', 'opacity-50');
+      });
+      thumb.classList.remove('border-accent/10', 'opacity-50');
+      thumb.classList.add('border-accent/50', 'opacity-100');
+    });
+  });
+</script>
