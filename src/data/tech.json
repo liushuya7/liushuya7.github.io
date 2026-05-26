@@ -22,7 +22,8 @@
         { "name": "VTK", "level": 2, "icon": "https://upload.wikimedia.org/wikipedia/commons/7/76/Visualization_Toolkit_logo.svg" },
         { "name": "MATLAB", "level": 3, "icon": "skill-icons:matlab-dark" },
         { "name": "React", "level": 1, "icon": "skill-icons:react-dark" },
-        { "name": "Node.js", "level": 1, "icon": "skill-icons:nodejs-dark" }
+        { "name": "Node.js", "level": 1, "icon": "skill-icons:nodejs-dark" },
+        { "name": "Rust", "level": 1, "icon": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg" }
       ]
     },
     {
