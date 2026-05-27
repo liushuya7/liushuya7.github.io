@@ -18,22 +18,33 @@
         { "name": "CMake", "level": 2, "icon": "skill-icons:cmake-dark" },
         { "name": "Git", "level": 3, "icon": "skill-icons:git" },
         { "name": "Qt/QML", "level": 2, "icon": "skill-icons:qt-dark" },
-        { "name": "OpenCV", "level": 3, "icon": "skill-icons:opencv-dark" },
+        { "name": "OpenCV", "level": 2, "icon": "skill-icons:opencv-dark" },
         { "name": "VTK", "level": 2, "icon": "https://upload.wikimedia.org/wikipedia/commons/7/76/Visualization_Toolkit_logo.svg" },
-        { "name": "MATLAB", "level": 3, "icon": "skill-icons:matlab-dark" },
+        { "name": "MATLAB", "level": 2, "icon": "skill-icons:matlab-dark" },
         { "name": "React", "level": 1, "icon": "skill-icons:react-dark" },
         { "name": "Node.js", "level": 1, "icon": "skill-icons:nodejs-dark" },
-        { "name": "Rust", "level": 1, "icon": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg" }
+        { "name": "Rust", "level": 1, "icon": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg" },
+        { "name": "GUI", "level": 3, "icon": "mdi:monitor-dashboard" }
       ]
     },
     {
-      "title": "Automation & System Integration",
+      "title": "Sensors & System Integration",
       "skills": [
-        { "name": "System Integration", "level": 3, "icon": "mdi:source-branch" },
-        { "name": "GUI Dev", "level": 3, "icon": "mdi:monitor-dashboard" },
-        { "name": "Siemens PLC/Conveyor", "level": 2, "icon": "mdi:factory" },
+        { "name": "Universal Robots", "level": 3, "icon": "https://upload.wikimedia.org/wikipedia/commons/2/29/Universal_robots_logo.svg" },
+        { "name": "IMU", "level": 3, "icon": "mdi:compass-rose" },
+        { "name": "Siemens PLC", "level": 2, "icon": "mdi:factory" },
         { "name": "Stereo/3D Cameras", "level": 3, "icon": "mdi:camera" },
         { "name": "Cloud Computing", "level": 1, "icon": "mdi:cloud" }
+      ]
+    },
+    {
+      "title": "Simulation",
+      "skills": [
+        { "name": "Isaac Sim", "level": 2, "icon": "https://upload.wikimedia.org/wikipedia/sco/2/21/Nvidia_logo.svg" },
+        { "name": "Gazebo", "level": 2, "icon": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Gazebo_logo_without_text.svg" },
+        { "name": "Mujoco", "level": 1, "icon": "mdi:cube-outline" },
+        { "name": "Simumatik", "level": 1, "icon": "https://yt3.googleusercontent.com/ytc/AIdro_nrhwgrRy9Nd2luQV2xlXjnyxdQ2f1Fln6B-6DG6L3QXwE=s160-c-k-c0x00ffffff-no-rj" },
+        { "name": "CoppeliaSim", "level": 3, "icon": "https://user-images.githubusercontent.com/29420733/70393939-c5821d80-19e7-11ea-8ebd-daaadd856287.png" }
       ]
     },
     {
