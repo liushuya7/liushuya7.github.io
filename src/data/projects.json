@@ -2,6 +2,7 @@
   {
     "slug": "robot-teleoperation-ultrasound",
     "title": "Robot Teleoperation for Ultrasound Scanning",
+    "timeframe": "Add timeframe (e.g., 2024 - 2025)",
     "description": "Built a real-time remote teleoperation system with haptic feedback for robot-assisted ultrasound scanning.",
     "fullDescription": "Add a full description of this project here. Describe the problem you were solving, your approach, the key technical challenges, and the outcomes achieved. This is a placeholder — replace it with the real details of the teleoperation system you built.",
     "highlights": [
@@ -16,13 +17,12 @@
     "images": ["astro-01.webp", "astro-02.jpeg"],
     "videos": [],
     "tech": ["ROS2", "Real-Time Control", "Haptics", "Ultrasound Robotics"],
-    "platforms": ["web"],
-    "link": "#",
     "category": "Medical Robotics"
   },
   {
     "slug": "ros2-orthopedic-surgical-robotics",
     "title": "ROS2 Framework for Orthopedic Surgical Robotics",
+    "timeframe": "Add timeframe (e.g., 2023 - 2024)",
     "description": "Developed modular ROS2 components for navigation, sensing, and control in robot-assisted orthopedic surgery.",
     "fullDescription": "Add a full description of this project here. Describe the problem you were solving, your approach, the key technical challenges, and the outcomes achieved. This is a placeholder — replace it with the real details of the ROS2 framework you built.",
     "highlights": [
@@ -36,13 +36,12 @@
     "images": ["astro-02.jpeg", "astro-01.webp"],
     "videos": [],
     "tech": ["ROS2", "Robot Navigation", "Sensor Fusion", "Surgical Robotics"],
-    "platforms": ["web"],
-    "link": "#",
     "category": "Research"
   },
   {
     "slug": "robotic-laser-cutting-cranial-implants",
     "title": "5-Axis Robotic Laser Cutting for Cranial Implants",
+    "timeframe": "Add timeframe (e.g., 2022 - 2023)",
     "description": "Designed and implemented a full robotic workflow including mechanical design, GUI, registration, and toolpath optimization for implant modification.",
     "fullDescription": "Add a full description of this project here. Describe the problem you were solving, your approach, the key technical challenges, and the outcomes achieved. This is a placeholder — replace it with the real details of the laser cutting system you built.",
     "highlights": [
@@ -57,8 +56,69 @@
     "images": ["astro-01.webp", "astro-02.jpeg"],
     "videos": [],
     "tech": ["KUKA iiwa", "Toolpath Planning", "3D Scanning", "C/C++", "Python"],
-    "platforms": ["web"],
-    "link": "#",
     "category": "Surgical Automation"
+  },
+  {
+    "slug": "iecar",
+    "title": "iECar: Controller Design of BLDC Motor for Electric Vehicles",
+    "timeframe": "2012 Fall - 2013 Spring",
+    "description": "Designed and implemented a controller for a brushless DC motor used in electric vehicles, focusing on efficiency and performance.",
+    "fullDescription": "This is my college senior project. I designed a controller for BLDC motors on a four‑wheel independently-drive electric vehicle that supports remote control, with the goal to develop autonomous vehicle, as part of an IoT-integrated intelligent transportation system.",
+    "highlights": [
+      "Assisted in assembling a four-wheel independently driven electric vehicle",
+      "Developed a multi-MCU control architecture for distributed vehicle wheel control"
+    ],
+    "links": [
+      { "label": "GitHub", "url": "#", "icon": "mdi:github" }
+    ],
+    "images": [
+      "iecar/picture-1.jpg",
+      "iecar/picture-2.JPG",
+      "iecar/picture-3.JPG",
+      "iecar/iECar_prototype.JPG",
+      "iecar/report-1.JPG",
+      "iecar/report-2.JPG",
+      "iecar/report-3.JPG"
+    ],
+    "videos": [
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/88J5ofbzmgs?t=200",
+        "title": "Video Demo"
+      }
+    ],
+    "tech": ["BLDC Motor", "Controller Design", "Vehicle Dynamics", "IoT", "Embedded Systems"],
+    "category": "Undergraduate Project"
+  },
+  {
+    "slug": "robot-basketball-association",
+    "title": "Robot Design: Basketball Robots (RBA)",
+    "timeframe": "2011 Fall - 2012 Spring",
+    "description": "Built an autonomous robot basketball system as an undergraduate team project, integrating perception, planning, and coordinated robot control.",
+    "fullDescription": "This was my college junior year project. This project involved the end‑to‑end design and fabrication of mobile basketball robots for a mini match. I designed and machined the custom mechanical parts, wired the circuit, designed PCBs, and programmed microcontrollers. Simulations and animations were created to validate the design.",
+    "highlights": [
+      "Designed and built mobile basketball robots, including simulation and animation",
+      "Gained hands-on manufacturing experience (lathing, milling, boring, wire EDM, and CNC machining) while fabricating robot components",
+      "Developed the electronic and control systems by creating circuit schematics, generating PCBs, and programming microcontrollers to achieve the desired motion control"
+    ],
+    "links": [
+      { "label": "Video Demo", "url": "https://www.youtube.com/watch?v=SsWZ2Vono-k", "icon": "mdi:play-circle-outline" },
+      { "label": "Mechanical Drawings", "url": "/rba/RBA_Mechanical_Design.pdf", "icon": "mdi:file-document-outline" }
+    ],
+    "images": [
+      "rba/RBA_Mechanical_Design_Page_1.jpg",
+      "rba/IMG00244-20120320-1519.jpg",
+      "rba/IMG00279-20120417-1552.jpg",
+      "rba/IMG00357-20120625-1646.jpg"
+    ],
+    "videos": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=SsWZ2Vono-k",
+        "title": "Video Demo"
+      }
+    ],
+    "tech": ["Mechanical Design", "CAD/CAM", "Prototyping", "Fabrication", "Control Systems"],
+    "category": "Undergraduate Project"
   }
 ]

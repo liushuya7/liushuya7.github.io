@@ -36,7 +36,8 @@
     "role": "Ph.D. in Mechanical Engineering",
     "period": "Jan 2016 - Aug 2021",
     "type": "Student",
-    "description": "Dissertation: Robotic Implant Modification for Neuroplastic Surgery\nAdvisor: Dr. Mehran Armand\n\nDesigned and implemented robotic systems for neuroplastic surgery implant modification, including a 5-axis laser cutting system with full-stack development (mechanical design, ROS2 control, registration, toolpath optimization). Built a miniature optical tracking & projection mapping system using RGB-D camera. Developed an automated pipeline using designed reattachable fiducial markers for intraoperative patient-CT registration and implant modification.",
+    "description": "Advisor: Dr. Mehran Armand\n\nDesigned and implemented robotic systems for neuroplastic surgery implant modification, including a 5-axis laser cutting system with full-stack development (mechanical design, ROS2 control, registration, toolpath optimization). Built a miniature optical tracking & projection mapping system using RGB-D camera. Developed an automated pipeline using designed reattachable fiducial markers for intraoperative patient-CT registration and implant modification.",
+    "dissertationUrl": "https://jscholarship.library.jhu.edu/items/9db289e5-33bc-426d-88e0-b35d0bc3ba2d",
     "skills": ["Medical Robotics", "Surgical Navigation", "Patient-CT Registration", "Toolpath Optimization", "Computer Vision", "AR/VR"]
   },
   {
@@ -52,15 +53,15 @@
     "role": "M.S.E. in Mechanical Engineering",
     "period": "Aug 2013 - May 2015",
     "type": "Student",
-    "description": "Graduate studies focused on robotics and mechanical system design.",
-    "skills": ["Mechanical Design", "Robotics", "Engineering Analysis"]
+    "description": "Graduate studies focused on Robotics and Control Systems.",
+    "skills": ["Robotics", "Control Systems", "Sensors", "Algorithms", "Computer Vision", "Programming"]
   },
   {
     "company": "Changsha University of Science and Technology",
     "role": "B.S. in Mechanical Engineering",
     "period": "Sep 2009 - Jun 2013",
     "type": "Student",
-    "description": "Undergraduate foundation in mechatronic system design and manufacturing.",
-    "skills": ["CAD/CAM", "SolidWorks", "C Programming"]
+    "description": "Undergraduate foundation in Mechanical Design and Mechatronics.",
+    "skills": ["Mechanical Design", "CAD/CAM", "SolidWorks", "Prototyping", "Fabrication", "Programming"]
   }
 ]

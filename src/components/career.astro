@@ -2,6 +2,14 @@
 // Import your data and the new component at the top of the file
 import careerData from '../data/career.json';
 import CareerCard from './career-card.astro';
+
+const workItems = careerData.filter((item) => item.type !== 'Student');
+const educationItems = careerData.filter((item) => item.type === 'Student');
+
+const careerGroups = [
+  { title: 'Work Experience', items: workItems },
+  { title: 'Education', items: educationItems }
+].filter((group) => group.items.length > 0);
 ---
 
 <section id="career" class="section-container max-w-6xl mx-auto overflow-hidden">
@@ -15,53 +23,70 @@ import CareerCard from './career-card.astro';
       </p>
     </div>
 
-    <div class="relative">
-      {/* Vertical Line*/}
-      <div class="absolute left-2 md:left-1/2 md:-translate-x-1/2 top-5 bottom-0 w-0.5 bg-linear-to-b from-accent via-white/10 to-transparent"></div>
-
-      {/* Mobile View */}
-      <div class="md:hidden space-y-8">
-        {careerData.map((item, index) => (
-          <div class="scroll-stat relative pl-6">
-            {/* Dot for mobile view*/}
-            <div class="absolute left-0 top-1 z-10">
-              <div class={`w-4 h-4 rounded-full border-4 border-[#0a0a0a] 
-                          ${index === 0 ? 'bg-accent shadow-[0_0_15px_var(--color-accent)] animate-pulse' : 'bg-accent/50'}`}>
-              </div>
-            </div>
-            
-            <CareerCard item={item} variant="mobile" />
+    <div>
+      {careerGroups.map((group, groupIndex) => (
+        <div class="space-y-6">
+          <div class="scroll-stat flex items-center gap-3 pl-1 md:pl-0">
+            <span class="h-2 w-2 rounded-full bg-accent"></span>
+            <h3 class="font-heading text-base md:text-lg tracking-wide text-maintext">{group.title}</h3>
           </div>
-        ))}
-      </div>
 
-      {/* Desktop View */}
-      <div class="hidden md:block space-y-4">
-        {careerData.map((item, index) => (
-          <div class="scroll-stat relative grid grid-cols-2">
-            {/* Center Dot */}
-            <div class="absolute left-1/2 -translate-x-1/2 top-1 z-10">
-              <div class={`w-4 h-4 rounded-full border-4 border-[#0a0a0a] 
-                          ${index === 0 ? 'bg-accent shadow-[0_0_15px_var(--color-accent)] animate-pulse' : 'bg-accent/50'}`}>
-              </div>
+          <div class="relative">
+            {/* Vertical Line*/}
+            <div class="absolute left-2 md:left-1/2 md:-translate-x-1/2 top-5 bottom-0 w-0.5 bg-linear-to-b from-accent via-white/10 to-transparent"></div>
+
+            {/* Mobile View */}
+            <div class="md:hidden space-y-8">
+              {group.items.map((item, index) => (
+                <div class="scroll-stat relative pl-6">
+                  {/* Dot for mobile view*/}
+                  <div class="absolute left-0 top-1 z-10">
+                    <div class={`w-4 h-4 rounded-full border-4 border-[#0a0a0a] 
+                                ${groupIndex === 0 && index === 0 ? 'bg-accent shadow-[0_0_15px_var(--color-accent)] animate-pulse' : 'bg-accent/50'}`}>
+                    </div>
+                  </div>
+                  
+                  <CareerCard item={item} variant="mobile" />
+                </div>
+              ))}
             </div>
 
-            {/* Left Side (even items) */}
-            <div class="md:px-6 md:py-0">
-              {index % 2 === 0 ? (
-                <CareerCard item={item} variant="desktop-left" />
-              ) : <div class="h-full pointer-events-none"></div>}
-            </div>
+            {/* Desktop View */}
+            <div class="hidden md:block space-y-4">
+              {group.items.map((item, index) => (
+                <div class="scroll-stat relative grid grid-cols-2">
+                  {/* Center Dot */}
+                  <div class="absolute left-1/2 -translate-x-1/2 top-1 z-10">
+                    <div class={`w-4 h-4 rounded-full border-4 border-[#0a0a0a] 
+                                ${groupIndex === 0 && index === 0 ? 'bg-accent shadow-[0_0_15px_var(--color-accent)] animate-pulse' : 'bg-accent/50'}`}>
+                    </div>
+                  </div>
 
-            {/* Right Side (odd items) */}
-            <div class="md:px-6 md:py-0">
-              {index % 2 !== 0 ? (
-                <CareerCard item={item} variant="desktop-right" />
-              ) : <div class="h-full pointer-events-none"></div>}
+                  {/* Left Side (even items) */}
+                  <div class="md:px-6 md:py-0">
+                    {index % 2 === 0 ? (
+                      <CareerCard item={item} variant="desktop-left" />
+                    ) : <div class="h-full pointer-events-none"></div>}
+                  </div>
+
+                  {/* Right Side (odd items) */}
+                  <div class="md:px-6 md:py-0">
+                    {index % 2 !== 0 ? (
+                      <CareerCard item={item} variant="desktop-right" />
+                    ) : <div class="h-full pointer-events-none"></div>}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
-        ))}
-      </div>
+
+          {groupIndex < careerGroups.length - 1 && (
+            <div class="scroll-stat py-3">
+              <div class="h-px w-full bg-linear-to-r from-transparent via-accent/50 to-transparent"></div>
+            </div>
+          )}
+        </div>
+      ))}
     </div>
   </div>
 </section>

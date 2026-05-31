@@ -6,6 +6,7 @@ interface Props {
     company: string;
     description: string;
     skills: string[];
+    dissertationUrl?: string;
   };
   variant: 'mobile' | 'desktop-left' | 'desktop-right';
 }
@@ -25,6 +26,16 @@ const skillContainerClasses = `flex flex-wrap gap-2 ${isLeft ? 'justify-end' : '
   <h3 class="text-xl font-heading font-bold text-maintext mt-1">{item.role}</h3>
   <p class="text-accent text-sm mb-4">{item.company}</p>
   <p class="text-subtext font-body text-sm leading-relaxed mb-4 whitespace-pre-line">{item.description}</p>
+  {item.dissertationUrl && (
+    <a
+      href={item.dissertationUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      class={`inline-block mb-4 text-sm font-body text-accent hover:underline ${isLeft ? 'text-right' : ''}`}
+    >
+      Dissertation: Robotic Implant Modification for Neuroplastic Surgery
+    </a>
+  )}
   <div class={skillContainerClasses}>
     {item.skills.map((skill: string) => (
       <span class={`rounded-md text-[10px] px-2 md:px-4 py-1 bg-accent/5 border border-accent/10 text-accent/80 group-hover:border-accent/40 group-hover:text-accent`}>{skill}</span>

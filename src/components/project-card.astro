@@ -18,7 +18,7 @@ const isSlider = validImages.length > 1;
 
 <div class="project-card group relative bg-accent/5 border border-accent/10 rounded-2xl overflow-hidden hover:border-accent/40 transition-all duration-500">
   <a href={`/projects/${project.slug}`} class="absolute inset-0 z-10 rounded-2xl" aria-label={`View ${project.title}`}></a>
-  <div class="aspect-video overflow-hidden relative bg-background/50">
+  <div class="aspect-video overflow-hidden relative bg-background/70">
     <div class="absolute inset-0 bg-accent/10 group-hover:bg-transparent transition-colors z-10 pointer-events-none"></div>
     
     <div class={`w-full h-full relative ${isSlider ? 'image-slider' : ''}`}>
@@ -28,7 +28,7 @@ const isSlider = validImages.length > 1;
             <Image
               src={imgMetadata}
               alt={`${project.title}`}
-              class={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 group-hover:scale-110 ${index === 0 ? "opacity-100 z-0" : "opacity-0 z-[-1]"}`}
+              class={`absolute inset-0 w-full h-full object-contain transition-all duration-1000 group-hover:scale-105 ${index === 0 ? "opacity-100 z-0" : "opacity-0 z-[-1]"}`}
             />
           ))
         ) : (
@@ -36,14 +36,14 @@ const isSlider = validImages.length > 1;
           <img
             src="/placeholder.jpeg"
             alt={`${project.title} placeholder`}
-            class="absolute inset-0 w-full h-full object-cover transition-all duration-1000 group-hover:scale-110"
+            class="absolute inset-0 w-full h-full object-contain transition-all duration-1000 group-hover:scale-105"
           />
         )
       }
     </div>
     
     <div class="absolute top-3 right-3 flex gap-2 z-20">
-      {project.platforms.map((p: string) => (
+      {(project.platforms ?? []).map((p: string) => (
         <div class="p-1.5 bg-background backdrop-blur-md rounded-lg border border-accent/10 text-maintext">
           <Icon name={`mdi:${p}`} class="w-4 h-4" />
         </div>
@@ -56,6 +56,9 @@ const isSlider = validImages.length > 1;
       <div>
         <span class="text-accent text-[10px] uppercase tracking-widest font-bold">{project.category}</span>
         <h3 class="text-xl font-heading font-bold text-maintext mt-1">{project.title}</h3>
+        {project.timeframe && (
+          <p class="text-xs text-subtext/80 font-body mt-1">{project.timeframe}</p>
+        )}
       </div>
       <span class="relative z-20 text-accent/75 group-hover:text-accent transition-colors">
         <Icon name="mdi:arrow-right" class="w-6 h-6 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />

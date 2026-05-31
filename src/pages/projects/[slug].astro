@@ -27,6 +27,7 @@ interface ProjectLink {
 interface Project {
   slug: string;
   title: string;
+  timeframe?: string;
   description: string;
   fullDescription: string;
   highlights: string[];
@@ -91,6 +92,9 @@ const liveLinks = project.links.filter(l => l.url !== '#');
       <h1 class="text-3xl md:text-5xl font-heading font-bold text-maintext mt-2 mb-5 leading-tight">
         {project.title}
       </h1>
+      {project.timeframe && (
+        <p class="text-sm text-subtext/85 font-body mb-5">{project.timeframe}</p>
+      )}
       <div class="flex flex-wrap gap-2">
         {project.tech.map((t: string) => (
           <span class="rounded-md text-[10px] px-3 py-1 bg-accent/5 border border-accent/20 text-accent/80">
@@ -105,7 +109,7 @@ const liveLinks = project.links.filter(l => l.url !== '#');
       <div class="mb-14 reveal-item" style="animation-delay: 120ms;">
 
         <!-- Main display -->
-        <div class="rounded-2xl overflow-hidden aspect-video border border-accent/10 mb-4 bg-background/50 relative">
+        <div class="rounded-2xl overflow-hidden aspect-video border border-accent/10 mb-4 bg-background/70 relative">
           {mediaItems.map((item, i) => (
             <div
               class={`gallery-item absolute inset-0 ${i === 0 ? '' : 'hidden'}`}
@@ -115,7 +119,7 @@ const liveLinks = project.links.filter(l => l.url !== '#');
                 <Image
                   src={item.src}
                   alt={item.label}
-                  class="w-full h-full object-cover"
+                  class="w-full h-full object-contain"
                 />
               )}
               {item.kind === 'youtube' && (
@@ -154,7 +158,7 @@ const liveLinks = project.links.filter(l => l.url !== '#');
                   <Image
                     src={item.src}
                     alt={item.label}
-                    class="w-full h-full object-cover pointer-events-none"
+                    class="w-full h-full object-contain pointer-events-none"
                   />
                 )}
                 {item.kind === 'youtube' && (
@@ -199,7 +203,7 @@ const liveLinks = project.links.filter(l => l.url !== '#');
         {project.highlights.length > 0 && (
           <div class="reveal-item" style="animation-delay: 240ms;">
             <h2 class="text-xl font-heading font-bold text-maintext mb-4 flex items-center gap-3">
-              <span class="text-accent">/</span> Key Highlights
+              <span class="text-accent">/</span> Key Contributions
             </h2>
             <ul class="space-y-3">
               {project.highlights.map((h: string) => (
@@ -253,6 +257,14 @@ const liveLinks = project.links.filter(l => l.url !== '#');
           <h2 class="text-sm font-heading font-bold text-maintext mb-3 uppercase tracking-widest">Category</h2>
           <span class="text-accent/70 font-body text-sm">{project.category}</span>
         </div>
+
+        <!-- Timeframe -->
+        {project.timeframe && (
+          <div class="reveal-item" style="animation-delay: 480ms;">
+            <h2 class="text-sm font-heading font-bold text-maintext mb-3 uppercase tracking-widest">Timeframe</h2>
+            <span class="text-subtext/85 font-body text-sm">{project.timeframe}</span>
+          </div>
+        )}
 
       </div>
     </div>
