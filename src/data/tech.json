@@ -24,7 +24,7 @@
         { "name": "React", "level": 1, "icon": "skill-icons:react-dark" },
         { "name": "Node.js", "level": 1, "icon": "skill-icons:nodejs-dark" },
         { "name": "Rust", "level": 1, "icon": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg" },
-        { "name": "GUI", "level": 3, "icon": "mdi:monitor-dashboard" }
+        { "name": "GUI Dev", "level": 3, "icon": "mdi:monitor-dashboard" }
       ]
     },
     {
@@ -33,8 +33,7 @@
         { "name": "Universal Robots", "level": 3, "icon": "https://upload.wikimedia.org/wikipedia/commons/2/29/Universal_robots_logo.svg" },
         { "name": "IMU", "level": 3, "icon": "mdi:compass-rose" },
         { "name": "Siemens PLC", "level": 2, "icon": "mdi:factory" },
-        { "name": "Stereo/3D Cameras", "level": 3, "icon": "mdi:camera" },
-        { "name": "Cloud Computing", "level": 1, "icon": "mdi:cloud" }
+        { "name": "Stereo/3D Cameras", "level": 3, "icon": "mdi:camera" }
       ]
     },
     {

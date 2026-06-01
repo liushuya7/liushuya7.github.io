@@ -39,25 +39,67 @@
     "category": "Research"
   },
   {
-    "slug": "robotic-laser-cutting-cranial-implants",
-    "title": "5-Axis Robotic Laser Cutting for Cranial Implants",
-    "timeframe": "Add timeframe (e.g., 2022 - 2023)",
-    "description": "Designed and implemented a full robotic workflow including mechanical design, GUI, registration, and toolpath optimization for implant modification.",
-    "fullDescription": "Add a full description of this project here. Describe the problem you were solving, your approach, the key technical challenges, and the outcomes achieved. This is a placeholder — replace it with the real details of the laser cutting system you built.",
+    "slug": "laser-robot",
+    "title": "5-Axis Laser Cutting System for Cranial Implants Modification",
+    "timeframe": "2016 Spring - 2021 Spring",
+    "description": "Designed and development of a laser cutting robot for intraoperative cranial implant modification.",
+    "fullDescription": "Design and development of a compact 5‑axis laser cutting system that automatically resizes customized cranial implants for single-stage cranioplasty. The system enables precise three-dimensional trimming of complex cranial or craniofacial implant geometries within a sterile operating-room environment, overcoming the limitations of manual, surgeon-dependent reshaping. Preliminary experimental results demonstrate superior implant fit, with millimeter-scale gaps between the implant and cranial defect, indicating operative duration reductions and improved aesthetic asymmetry.",
     "highlights": [
-      "Placeholder highlight — describe a key technical achievement",
-      "Placeholder highlight — describe an important design decision",
-      "Placeholder highlight — describe a measurable outcome or result"
+      "Designed and engineered a novel 5‑axis laser cutting machine specifically optimized for intraoperative, single-stage cranioplasty implant modification",
+      "Developed a three-dimensional shaping approach that accurately bevels implant edges and accommodates complex cranial or craniofacial geometries beyond the capabilities of conventional laser cutters",
+      "Demonstrated, through preliminary experiments, that the system achieved higher-quality implant–skull fit with only millimeter-level gaps, reduced operative duration, and improved cosmetic outcomes"
     ],
     "links": [
-      { "label": "GitHub", "url": "#", "icon": "mdi:github" },
+      { "label": "Video Demo", "url": "https://youtu.be/0k80uq4zdbA?t=2025", "icon": "mdi:play-circle-outline" },
+      {"icon": "mdi:file-document-outline", "label": "Publication", "url": "https://asmedigitalcollection.asme.org/IDETC-CIE/proceedings-abstract/IDETC-CIE2017/58110/V001T02A051/259145"},
+      { "label": "EN.601.656 CIS-II Project Page", "url": "https://ciis.lcsr.jhu.edu/doku.php?id=courses:446:2016:446-2016-18:project_18_main_page", "icon": "mdi:file-document-outline" },
+      { "label": "ROS2 GUI for Cranial Laser Cutting System", "url": "https://github.com/liushuya7/grbl_ros2_gui.git", "icon": "mdi:github" },
+      { "label": "cn5X: GRBL GUI for grbl-Mega-5X", "url": "https://github.com/liushuya7/cn5X.git", "icon": "mdi:github" },
+      { "label": "Rhino Tool Path Generation Plugin", "url": "https://github.com/liushuya7/Rhino-Path-Generation-Plugin.git", "icon": "mdi:github" },
       { "label": "Demo", "url": "#", "icon": "mdi:play-circle-outline" }
     ],
-    "images": ["astro-01.webp", "astro-02.jpeg"],
+    "images": [
+      "laser-robot/Workflow.jpg",
+      "laser-robot/System_overview_1.jpg",
+      "laser-robot/System_overview_2.jpg",
+      "laser-robot/Kinematics.jpg",
+      "laser-robot/handeye_calib.jpg",
+      "laser-robot/Toolpath_generation.jpg",
+      "laser-robot/Results.png",
+      "laser-robot/Laser_milling_applications.jpg"
+    ],
     "videos": [],
-    "tech": ["KUKA iiwa", "Toolpath Planning", "3D Scanning", "C/C++", "Python"],
-    "category": "Surgical Automation"
+    "tech": ["Surgical Robotics", "Mechanical Design", "Embedded Systems", "Robot Kinematics Calibration", "Toolpath Planning", "ROS", "3D Scanning", "Registration", "Programming"],
+    "category": "Doctoral Research"
   },
+  {
+    "slug": "soccerbot",
+    "title": "SoccerBot: Turtlebot-based Soccer-Playing Robots",
+    "timeframe": "2015 Spring",
+    "description": "Designed and built autonomous robots capable of playing soccer game, integrating user input, motion planning, and control.",
+    "fullDescription": "EN.530.707 Robot System Programming (final project). We designed and built autonomous soccer-playing robots using Turtlebot platforms that can perceive the environment using Kinect, plan its actions by taking input from the user, and execute the movements. The project involved sensor integration, computer vision, and control algorithm development.",
+    "highlights": [
+      "Integrated kinect sensor for environment perception and ball tracking",
+      "Designed Qt User Interface to allow users set the kicking direction",
+      "Developed control algorithms for robot motion planning, navigation, and execution"
+    ],
+    "links": [
+      { "label": "Video Demo", "url": "https://www.youtube.com/watch?v=mcCN2fTZdo4", "icon": "mdi:play-circle-outline" }
+    ],
+    "images": [
+      "soccerbot/IMG_20150512_151618.jpg",
+      "soccerbot/2015-05-07 10.48.15.jpg"
+    ],
+    "videos": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=mcCN2fTZdo4",
+        "title": "Video Demo"
+      }
+    ],
+    "tech": ["ROS", "Computer Vision", "GUI Development", "PID Control", "Autonomy"],
+    "category": "M.S.E. Project"
+  }, 
   {
     "slug": "iecar",
     "title": "iECar: Controller Design of BLDC Motor for Electric Vehicles",
@@ -66,10 +108,11 @@
     "fullDescription": "This is my college senior project. I designed a controller for BLDC motors on a four‑wheel independently-drive electric vehicle that supports remote control, with the goal to develop autonomous vehicle, as part of an IoT-integrated intelligent transportation system.",
     "highlights": [
       "Assisted in assembling a four-wheel independently driven electric vehicle",
-      "Developed a multi-MCU control architecture for distributed vehicle wheel control"
+      "Developed a multi-MCU control architecture for distributed vehicle control",
+      "Closed-loop control of BLDC hub motors"
     ],
     "links": [
-      { "label": "GitHub", "url": "#", "icon": "mdi:github" }
+      { "label": "Publication", "url": "/iecar/四轮轮式驱动电动汽车电气系统设计与实现.pdf", "icon": "mdi:file-document-outline" }
     ],
     "images": [
       "iecar/picture-1.jpg",
@@ -106,10 +149,12 @@
       { "label": "Mechanical Drawings", "url": "/rba/RBA_Mechanical_Design.pdf", "icon": "mdi:file-document-outline" }
     ],
     "images": [
+      "rba/RBA_CAD_scrennshot.jpg",
       "rba/RBA_Mechanical_Design_Page_1.jpg",
       "rba/IMG00244-20120320-1519.jpg",
       "rba/IMG00279-20120417-1552.jpg",
-      "rba/IMG00357-20120625-1646.jpg"
+      "rba/IMG00357-20120625-1646.jpg",
+      "rba/RBA_robot_picture.jpg"
     ],
     "videos": [
       {
@@ -118,7 +163,7 @@
         "title": "Video Demo"
       }
     ],
-    "tech": ["Mechanical Design", "CAD/CAM", "Prototyping", "Fabrication", "Control Systems"],
+    "tech": ["Mechanical Design", "CAD/CAM", "Prototyping", "Fabrication", "Controller Programming"],
     "category": "Undergraduate Project"
   }
 ]
