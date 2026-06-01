@@ -65,7 +65,7 @@ const mediaItems: MediaItem[] = [
       if (!videoId) return [];
       return [{ kind: 'youtube', videoId, label: v.title ?? `Video ${i + 1}` }];
     }
-    return [{ kind: 'local', url: `/videos/${v.url}`, label: v.title ?? `Video ${i + 1}` }];
+    return [{ kind: 'local', url: v.url.startsWith('/') ? v.url : `/videos/${v.url}`, label: v.title ?? `Video ${i + 1}` }];
   }),
 ];
 

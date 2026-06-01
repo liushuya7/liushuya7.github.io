@@ -20,41 +20,56 @@
     "category": "Medical Robotics"
   },
   {
-    "slug": "ros2-orthopedic-surgical-robotics",
-    "title": "ROS2 Framework for Orthopedic Surgical Robotics",
-    "timeframe": "Add timeframe (e.g., 2023 - 2024)",
-    "description": "Developed modular ROS2 components for navigation, sensing, and control in robot-assisted orthopedic surgery.",
-    "fullDescription": "Add a full description of this project here. Describe the problem you were solving, your approach, the key technical challenges, and the outcomes achieved. This is a placeholder — replace it with the real details of the ROS2 framework you built.",
+    "slug": "ppmd",
+    "title": "Portable Projection Mapping Device (PPMD)",
+    "timeframe": "2019 Fall - 2020 Spring",
+    "description": "A portable projection mapping device for projection-based medical augmented reality applications.",
+    "fullDescription": "Designed a portable projection mapping device that delivers medical augmented reality guidance for single-stage cranioplasty. The system projects surgical planning information directly onto the patient or implant, enabling more intuitive visualization and surgical instrument tracking using RGB-D cameras. By embedding augmented reality in a compact, mobile form factor, the device is tailored for developers to implement AR applications in real-world settings. We demonstrated the system's capability in single-stage cranioplasty, showing accurate instrument tracking and real-time visualization.",
     "highlights": [
-      "Placeholder highlight — describe a key technical achievement",
-      "Placeholder highlight — describe an important design decision",
-      "Placeholder highlight — describe a measurable outcome or result"
+      "Designed and developed a portable projection-based augmented reality system",
+      "Performed camera-projector calibraion. Designed stereo IR optical tracking camera using RGB-D camera. Developed surgical instrument tracking algorithm. Integrated projection mapping with surgical planning to display guidance directly in the operative field",
+      "Demonstrated the feasibility of the system in single-stage cranioplasty, showing accurate instrument tracking and real-time visualization"
     ],
     "links": [
-      { "label": "GitHub", "url": "#", "icon": "mdi:github" }
+      { "label": "Presentation", "url": "https://youtu.be/0k80uq4zdbA?t=497", "icon": "mdi:play-circle-outline" },
+      { "label": "Publication", "url": "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11310/2546445/A-portable-projection-mapping-device-for-medical-augmented-reality-in/10.1117/12.2546445.full", "icon": "mdi:file-document-outline" },
+      { "label": "PPMD-v2.0 Code (Optical Tracker Only)", "url": "https://github.com/liushuya7/PPMD-v2.0.git", "icon": "mdi:github" },
+      { "label": "PPMD-v1.0 Code", "url": "https://github.com/liushuya7/PPMD-v1.0.git", "icon": "mdi:github" }
     ],
-    "images": ["astro-02.jpeg", "astro-01.webp"],
-    "videos": [],
-    "tech": ["ROS2", "Robot Navigation", "Sensor Fusion", "Surgical Robotics"],
+    "images": [
+      "ppmd/device_design.png",
+      "ppmd/instrument_tracking.jpg",
+      "ppmd/Overview.png",
+      "ppmd/applications.jpg"
+    ],
+    "videos": [
+      {
+        "type": "local",
+        "url": "/ppmd/spie_demo.mp4",
+        "title": "Video Demo"
+      }
+    ],
+    "tech": ["ROS2", "Surgical Navigation", "Instrument Tracking", "Projection AR"],
     "category": "Research"
   },
   {
     "slug": "laser-robot",
     "title": "5-Axis Laser Cutting System for Cranial Implants Modification",
     "timeframe": "2016 Spring - 2021 Spring",
-    "description": "Designed and development of a laser cutting robot for intraoperative cranial implant modification.",
-    "fullDescription": "Design and development of a compact 5‑axis laser cutting system that automatically resizes customized cranial implants for single-stage cranioplasty. The system enables precise three-dimensional trimming of complex cranial or craniofacial implant geometries within a sterile operating-room environment, overcoming the limitations of manual, surgeon-dependent reshaping. Preliminary experimental results demonstrate superior implant fit, with millimeter-scale gaps between the implant and cranial defect, indicating operative duration reductions and improved aesthetic asymmetry.",
+    "description": "Designed and developed a laser cutting robot for intraoperative cranial implant modification.",
+    "fullDescription": "Design and development of a compact 5‑axis laser cutting system automatically resizes customized cranial implants for single-stage cranioplasty. The system enables precise three-dimensional trimming of complex cranial or craniofacial implant geometries within a sterile operating-room environment, overcoming the limitations of manual, surgeon-dependent reshaping. Preliminary experimental results demonstrate superior implant fit, with millimeter-scale gaps between the implant and cranial defect, indicating operative duration reductions and improved aesthetic asymmetry.",
     "highlights": [
       "Designed and engineered a novel 5‑axis laser cutting machine specifically optimized for intraoperative, single-stage cranioplasty implant modification",
       "Developed a three-dimensional shaping approach that accurately bevels implant edges and accommodates complex cranial or craniofacial geometries beyond the capabilities of conventional laser cutters",
       "Demonstrated, through preliminary experiments, that the system achieved higher-quality implant–skull fit with only millimeter-level gaps, reduced operative duration, and improved cosmetic outcomes"
     ],
     "links": [
-      { "label": "Video Demo", "url": "https://youtu.be/0k80uq4zdbA?t=2025", "icon": "mdi:play-circle-outline" },
+      { "label": "Presentation", "url": "https://youtu.be/0k80uq4zdbA?t=2025", "icon": "mdi:play-circle-outline" },
       {"icon": "mdi:file-document-outline", "label": "Publication", "url": "https://asmedigitalcollection.asme.org/IDETC-CIE/proceedings-abstract/IDETC-CIE2017/58110/V001T02A051/259145"},
       { "label": "EN.601.656 CIS-II Project Page", "url": "https://ciis.lcsr.jhu.edu/doku.php?id=courses:446:2016:446-2016-18:project_18_main_page", "icon": "mdi:file-document-outline" },
       { "label": "ROS2 GUI for Cranial Laser Cutting System", "url": "https://github.com/liushuya7/grbl_ros2_gui.git", "icon": "mdi:github" },
-      { "label": "cn5X: GRBL GUI for grbl-Mega-5X", "url": "https://github.com/liushuya7/cn5X.git", "icon": "mdi:github" },
+      { "label": "GRBLduino Firmware", "url": "https://github.com/liushuya7/grbl-Mega-5X.git", "icon": "mdi:github" },
+      { "label": "cn5X: GUI for grbl-Mega-5X", "url": "https://github.com/liushuya7/cn5X.git", "icon": "mdi:github" },
       { "label": "Rhino Tool Path Generation Plugin", "url": "https://github.com/liushuya7/Rhino-Path-Generation-Plugin.git", "icon": "mdi:github" },
       { "label": "Demo", "url": "#", "icon": "mdi:play-circle-outline" }
     ],
