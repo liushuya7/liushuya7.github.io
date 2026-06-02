@@ -20,6 +20,29 @@
     "category": "Medical Robotics"
   },
   {
+    "slug": "imaged-guided-robotic-surgery",
+    "title": "Image-Guided Robotic Orthopedic Surgery",
+    "timeframe": "Aug 2022 - Oct 2024",
+    "description": "Integrating an image-guided CDM actuation robotic system for robot-assisted orthopedic surgery.",
+    "fullDescription": "Developed an image-guided robotic system for robot-assisted orthopedic surgery. The system integrates a continuum dexterous manipulator (CDM) with real-time image guidance to enable precise and minimally invasive surgical interventions.",
+    "highlights": [
+      "Designed the CDM actuation system and integrated FBG sensors for real-time shape sensing",
+      "Developed Siemens C-arm URDF for ROS2 to enable real-time image guidance in robotic surgery",
+      "Implemented ros2_control for the CDM actuation and integrated with UR robot"
+    ],
+    "links": [
+      { "label": "CDM URDF", "url": "https://github.com/liushuya7/cm_actuation_description.git", "icon": "mdi:github" },
+      { "label": "Siemens C-arm URDF", "url": "https://github.com/liushuya7/Siemens_Cios_C_arm_ROS2_Description.git", "icon": "mdi:github" }
+    ],
+    "images": [
+      "cdm-actuation/C-arm_cdm_actuation.png",
+      "cdm-actuation/actuation_unit_with_FBG_sensor.png"
+    ],
+    "videos": [],
+    "tech": ["ROS2", "Image Processing", "Surgery Robotics"],
+    "category": "Medical Robotics"
+  },
+  {
     "slug": "cap-sensor",
     "title": "Embedded Capacitive Sensing for Continuum Dexterous Manipulators",
     "timeframe": "Oct 2021 - Aug 2022",
