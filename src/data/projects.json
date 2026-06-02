@@ -1,22 +1,25 @@
 [
   {
-    "slug": "robot-teleoperation-ultrasound",
-    "title": "Robot Teleoperation for Ultrasound Scanning",
-    "timeframe": "Add timeframe (e.g., 2024 - 2025)",
+    "slug": "ultrasound",
+    "title": "Robotic Teleoperation for Ultrasound Scanning",
+    "timeframe": "July 2025 - Present",
     "description": "Built a real-time remote teleoperation system with haptic feedback for robot-assisted ultrasound scanning.",
-    "fullDescription": "Add a full description of this project here. Describe the problem you were solving, your approach, the key technical challenges, and the outcomes achieved. This is a placeholder — replace it with the real details of the teleoperation system you built.",
+    "fullDescription": "This project focuses on the development of a teleoperation system for ultrasound scanning, enabling safe and effective remote control of the ultrasound probe with haptic feedback. The system integrates force/torque sensors to provide haptic feedback to the operator, enhancing the teleoperation experience and performance. The capabilities of the system are demonstrated through AR/VR applications.",
     "highlights": [
-      "Placeholder highlight — describe a key technical achievement",
-      "Placeholder highlight — describe an important design decision",
-      "Placeholder highlight — describe a measurable outcome or result"
+      "Designed and implemented a teleoperation system for ultrasound scanning, enabling safe real-time remote control of the ultrasound probe with haptic feedback",
+      "Integrated force/torque sensors to provide haptic feedback to the operator, enhancing the teleoperation experience and performance",
+      "Demonstrated the system's capabilities with AR/VR."
     ],
     "links": [
-      { "label": "GitHub", "url": "#", "icon": "mdi:github" },
-      { "label": "Paper", "url": "#", "icon": "mdi:file-document-outline" }
+      { "label": "Code", "url": "https://github.com/uark-i3r-bigss/ultraARsound_ROS2_bridge.git", "icon": "mdi:github" }
     ],
-    "images": ["astro-01.webp", "astro-02.jpeg"],
+    "images": [
+      "ultrasound/AR_demo_1.gif",
+      "ultrasound/AR_demo_2.gif",
+      "ultrasound/system_setup.png"
+    ],
     "videos": [],
-    "tech": ["ROS2", "Real-Time Control", "Haptics", "Ultrasound Robotics"],
+    "tech": ["ROS2", "Zenoh", "F/T Sensor", "Haptics", "Teleoperation", "Constrained Control", "AR/VR"],
     "category": "Medical Robotics"
   },
   {
