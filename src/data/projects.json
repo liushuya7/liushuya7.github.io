@@ -20,7 +20,38 @@
     "category": "Medical Robotics"
   },
   {
-    "slug": "imaged-guided-robotic-surgery",
+    "slug": "ur-ball-catching",
+    "title": "Robot Catcher",
+    "timeframe": "Oct 2024 - April 2025",
+    "description": "Developed a UR robot system capable of catching a flying baseball in real time.",
+    "fullDescription": "This project involved designing and implementing a robotic system using a Universal Robots (UR) arm to catch a flying baseball in real time. The system integrates ros2_control, stereo IR vision for ball tracking, and real-time motion planning to enable the robot to intercept and catch the ball. The project demonstrates the capabilities of ROS2 in handling real-time robotic applications and the potential for advanced perception and control in dynamic environments.",
+    "highlights": [
+      "Implemented a real-time ball tracking system using stereo IR vision",
+      "Developed a ros2_control architecture for the UR robot to execute precise and timely movements to catch the ball",
+      "Integrated a Extended Kalman Filter for ball trajectory prediction and robot motion planning"
+    ],
+    "links": [
+      { "label": "I³R Open House Showcase", "url": "https://youtu.be/hSgVzRio8Yk?t=79", "icon": "mdi:play-circle-outline" },
+      { "label": "Code", "url": "https://github.com/liushuya7/ur_ball_catching.git", "icon": "mdi:github" }
+    ],
+    "images": [
+      "ur-ball-catching/demo.gif",
+      "ur-ball-catching/system_setup.png",
+      "ur-ball-catching/handeye_calib.png",
+      "ur-ball-catching/razorbacks.png"
+    ],
+    "videos": [
+      {
+        "type": "local",
+        "url": "/ur-ball-catching/demo.mov",
+        "title": "Video Demo"
+      }
+    ],
+    "tech": ["ROS2", "Computer Vision", "Real-Time Tracking & Control", "Kalman Filter", "Motion Planning"],
+    "category": "Robotics"
+  },
+  {
+    "slug": "cdm-actuation",
     "title": "Image-Guided Robotic Orthopedic Surgery",
     "timeframe": "Aug 2022 - Oct 2024",
     "description": "Integrating an image-guided CDM actuation robotic system for robot-assisted orthopedic surgery.",
