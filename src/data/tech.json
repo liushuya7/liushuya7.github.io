@@ -6,7 +6,7 @@
         { "name": "ROS2", "level": 3, "icon": "mdi:robot-industrial" },
         { "name": "Sensor Fusion", "level": 3, "icon": "mdi:merge" },
         { "name": "Real-Time Control", "level": 3, "icon": "mdi:car-cruise-control" },
-        { "name": "Motion Planning", "level": 2, "icon": "mdi:robot-industrial-outline" },
+        { "name": "Motion Planning", "level": 3, "icon": "mdi:robot-industrial-outline" },
         { "name": "Autonomous Navigation", "level": 2, "icon": "mdi:map-marker-path" }
       ]
     },
@@ -31,8 +31,16 @@
       "title": "Sensors & System Integration",
       "skills": [
         { "name": "Universal Robots", "level": 3, "icon": "https://upload.wikimedia.org/wikipedia/commons/2/29/Universal_robots_logo.svg" },
+        { "name": "KUKA", "level": 3, "icon": "https://www.logo.wine/a/logo/KUKA/KUKA-Logo.wine.svg" },
+        { "name": "UFactory", "level": 3, "icon": "https://yt3.googleusercontent.com/ytc/AIdro_n-87T4gTxvyrYEIITlN-EfBw50OjvesFPTUJMu3jXA3Q0=s160-c-k-c0x00ffffff-no-rj" },
+        { "name": "Siemens PLC", "level": 2, "icon": "https://fortworthreport.org/wp-content/uploads/2024/01/image006-1.png" },
+        { "name": "NDI Polaris", "level": 3, "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1jZY12U5mKGIeIIOJxyazpJvEW5nvGBIET-ZlWXm6o_xf_A30vxP4YmT6&s=10" },
+        { "name": "Atracsys", "level": 3, "icon": "https://www.medicaldevice-network.com/wp-content/uploads/sites/23/2021/05/Logo-atracsys.jpg" },
+        { "name": "ZIVID", "level": 2, "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiN7rEVEN-AAZ203_54tSJtNpsKKBAUKeGpdAOIYdGUFdwayc5-YHp7-xw&s=10" },
+        { "name": "RealSense", "level": 3, "icon": "https://www.intel.com/content/dam/www/central-libraries/us/en/images/2025-07/real-sense-logo-rgb.png" },
+        { "name": "Orbbec", "level": 3, "icon": "https://new-orbbec3d-s3.s3.amazonaws.com/wp-content/uploads/2024/10/21092809/orbbeclogo2024.png" },
+        { "name": "SICK", "level": 2, "icon": "https://cdn.freebiesupply.com/logos/large/2x/sick-optic-electronic-1-logo-svg-vector.svg" },
         { "name": "IMU", "level": 3, "icon": "mdi:compass-rose" },
-        { "name": "Siemens PLC", "level": 2, "icon": "mdi:factory" },
         { "name": "Stereo/3D Cameras", "level": 3, "icon": "mdi:camera" }
       ]
     },
