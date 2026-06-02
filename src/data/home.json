@@ -9,9 +9,9 @@
   "_comment": "Add your social links below. Leave the 'url' empty to hide the icon. Set 'showInContact' to true or false to control if it appears in the Contact section.",
   "socials": [
     {
-      "name": "GitHub",
-      "url": "https://github.com/liushuya7",
-      "icon": "mdi:github",
+      "name": "Email",
+      "url": "mailto:joshua.liu@uark.edu",
+      "icon": "mdi:email",
       "showInContact": true
     },
     {
@@ -21,21 +21,15 @@
       "showInContact": true
     },
     {
-      "name": "Leetcode",
-      "url": "#",
-      "icon": "devicon-plain:leetcode",
-      "showInContact": false
+      "name": "GitHub",
+      "url": "https://github.com/liushuya7",
+      "icon": "mdi:github",
+      "showInContact": true
     },
     {
-      "name": "Behance",
-      "url": "#",
-      "icon": "devicon-plain:behance",
-      "showInContact": false
-    },
-    {
-      "name": "Email",
-      "url": "mailto:joshua.liu@uark.edu",
-      "icon": "mdi:email",
+      "name": "Google Scholar",
+      "url": "https://scholar.google.com/citations?user=qETyh_kAAAAJ&hl=en",
+      "icon": "devicon-plain:google",
       "showInContact": true
     },
     {

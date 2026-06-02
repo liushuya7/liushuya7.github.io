@@ -20,6 +20,37 @@
     "category": "Medical Robotics"
   },
   {
+    "slug": "cutting-robot",
+    "title": "Automated Implant Modification in Neuroplastic Surgery",
+    "timeframe": "2020 Fall - 2021 Spring",
+    "description": "Proposed a novel approach for automated modification of patient-specific cranial implants during neuroplastic surgery.",
+    "fullDescription": "This project involved the design and development of a robotic system to perform precise, intraoperative modification of patient-specific customized cranial implants during single-stage cranioplasty. The integrated workflow combines preoperative surgical planning, intraoperative imaging, registration, and robotic implant modification to ensure an optimal fit between the resized implant and the patient’s cranial defect. The system can make complex geometric adjustments to the implant, leading to reduced operative duration, improved accuracy, and enhanced cosmetic and functional outcomes for patients undergoing cranial reconstruction.",
+    "highlights": [
+      "Pioneered an automated robotic workflow for intraoperative resizing of customized cranial implants, achieving higher accuracy than manual surgeon-dependent modifications.",
+      "Developed the robotic cutting system along with the imaging system to enable real-time implant modifications",
+      "Validated the system's performance through cadaver studies, showing millimeter-level precision in implant fit and significant reductions in operative duration compared to traditional manual approaches"
+    ],
+    "links": [
+      { "label": "Presentation", "url": "https://youtu.be/0k80uq4zdbA?t=977", "icon": "mdi:play-circle-outline" },
+      { "label": "Publication 1", "url": "https://ieeexplore.ieee.org/document/9560965", "icon": "mdi:file-document-outline" },
+      { "label": "Publication 2", "url": "https://pubmed.ncbi.nlm.nih.gov/34395869/", "icon": "mdi:file-document-outline" },
+      { "label": "Code for KUKA Robot & RGBD camera", "url": "https://github.com/liushuya7/automated-implant-modification.git", "icon": "mdi:github" },
+      { "label": "Code for CCI Reconstruction", "url": "https://github.com/liushuya7/CCIs-Reconstruction", "icon": "mdi:github" },
+      { "label": "Code for creating Implant Molds", "url": "https://github.com/liushuya7/Implant2mold.git", "icon": "mdi:github" }
+    ],
+    "images": [
+      "cutting-robot/Picture1.png",
+      "cutting-robot/Picture2.png",
+      "cutting-robot/Picture3.png",
+      "cutting-robot/Picture4.png",
+      "cutting-robot/Picture5.jpg",
+      "cutting-robot/Picture6.png"
+    ],
+    "videos": [],
+    "tech": ["ROS2", "Surgical Robotics", "Computer Vision", "Medical Imaging", "Real-Time Control"],
+    "category": "Doctoral Research"
+  },
+  {
     "slug": "ppmd",
     "title": "Portable Projection Mapping Device (PPMD)",
     "timeframe": "2019 Fall - 2020 Spring",
@@ -27,12 +58,13 @@
     "fullDescription": "Designed a portable projection mapping device that delivers medical augmented reality guidance for single-stage cranioplasty. The system projects surgical planning information directly onto the patient or implant, enabling more intuitive visualization and surgical instrument tracking using RGB-D cameras. By embedding augmented reality in a compact, mobile form factor, the device is tailored for developers to implement AR applications in real-world settings. We demonstrated the system's capability in single-stage cranioplasty, showing accurate instrument tracking and real-time visualization.",
     "highlights": [
       "Designed and developed a portable projection-based augmented reality system",
-      "Performed camera-projector calibraion. Designed stereo IR optical tracking camera using RGB-D camera. Developed surgical instrument tracking algorithm. Integrated projection mapping with surgical planning to display guidance directly in the operative field",
+      "Performed camera-projector calibration. Designed stereo IR optical tracking camera using RGB-D camera. Developed surgical instrument tracking algorithm. Integrated projection mapping with surgical planning to display guidance directly in the operative field",
       "Demonstrated the feasibility of the system in single-stage cranioplasty, showing accurate instrument tracking and real-time visualization"
     ],
     "links": [
       { "label": "Presentation", "url": "https://youtu.be/0k80uq4zdbA?t=497", "icon": "mdi:play-circle-outline" },
       { "label": "Publication", "url": "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11310/2546445/A-portable-projection-mapping-device-for-medical-augmented-reality-in/10.1117/12.2546445.full", "icon": "mdi:file-document-outline" },
+      { "label": "Patent", "url": "https://jhu.technologypublisher.com/technology/52876", "icon": "mdi:file-document-outline" },
       { "label": "PPMD-v2.0 Code (Optical Tracker Only)", "url": "https://github.com/liushuya7/PPMD-v2.0.git", "icon": "mdi:github" },
       { "label": "PPMD-v1.0 Code", "url": "https://github.com/liushuya7/PPMD-v1.0.git", "icon": "mdi:github" }
     ],
@@ -49,8 +81,8 @@
         "title": "Video Demo"
       }
     ],
-    "tech": ["ROS2", "Surgical Navigation", "Instrument Tracking", "Projection AR"],
-    "category": "Research"
+    "tech": ["ROS2", "Computer Vision", "Surgical Navigation", "Instrument Tracking", "Projection AR"],
+    "category": "Doctoral Research"
   },
   {
     "slug": "laser-robot",
