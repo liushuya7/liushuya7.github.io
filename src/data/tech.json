@@ -40,6 +40,8 @@
         { "name": "RealSense", "level": 3, "icon": "https://www.intel.com/content/dam/www/central-libraries/us/en/images/2025-07/real-sense-logo-rgb.png" },
         { "name": "Orbbec", "level": 3, "icon": "https://new-orbbec3d-s3.s3.amazonaws.com/wp-content/uploads/2024/10/21092809/orbbeclogo2024.png" },
         { "name": "SICK", "level": 2, "icon": "https://cdn.freebiesupply.com/logos/large/2x/sick-optic-electronic-1-logo-svg-vector.svg" },
+        { "name": "3D Systems", "level": 3, "icon": "https://upload.wikimedia.org/wikipedia/commons/7/7b/3D_Systems_Logo.png" },
+        { "name": "Bota Systems", "level": 3, "icon": "https://botasys.com/wp-content/uploads/2025/11/Bota-LogoFull-Black.png" },
         { "name": "IMU", "level": 3, "icon": "mdi:compass-rose" },
         { "name": "Stereo/3D Cameras", "level": 3, "icon": "mdi:camera" }
       ]
