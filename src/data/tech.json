@@ -3,7 +3,7 @@
     {
       "title": "Robotics & Autonomy",
       "skills": [
-        { "name": "ROS2", "level": 3, "icon": "mdi:robot-industrial" },
+        { "name": "ROS2", "level": 3, "icon": "https://avatars.githubusercontent.com/u/3979232?s=200&v=4" },
         { "name": "Sensor Fusion", "level": 3, "icon": "mdi:merge" },
         { "name": "Real-Time Control", "level": 3, "icon": "mdi:car-cruise-control" },
         { "name": "Motion Planning", "level": 3, "icon": "mdi:robot-industrial-outline" },
@@ -52,7 +52,7 @@
         { "name": "Isaac Sim", "level": 2, "icon": "https://upload.wikimedia.org/wikipedia/sco/2/21/Nvidia_logo.svg" },
         { "name": "Gazebo", "level": 2, "icon": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Gazebo_logo_without_text.svg" },
         { "name": "Mujoco", "level": 1, "icon": "mdi:cube-outline" },
-        { "name": "Simumatik", "level": 1, "icon": "https://yt3.googleusercontent.com/ytc/AIdro_nrhwgrRy9Nd2luQV2xlXjnyxdQ2f1Fln6B-6DG6L3QXwE=s160-c-k-c0x00ffffff-no-rj" },
+        { "name": "Simumatik", "level": 1, "icon": "https://docs.simumatik.com/img/whitelabel/simumatik/logo.svg" },
         { "name": "CoppeliaSim", "level": 3, "icon": "https://user-images.githubusercontent.com/29420733/70393939-c5821d80-19e7-11ea-8ebd-daaadd856287.png" }
       ]
     },
@@ -62,6 +62,7 @@
         { "name": "SolidWorks", "level": 3, "icon": "mdi:ruler-square-compass" },
         { "name": "CAD/CAM", "level": 3, "icon": "mdi:vector-polyline" },
         { "name": "3D Printing", "level": 3, "icon": "mdi:printer-3d" },
+        { "name": "Laser Cutting", "level": 2, "icon": "https://upload.wikimedia.org/wikipedia/commons/0/03/Sailing_laser.svg" },
         { "name": "CNC Machining", "level": 3, "icon": "mdi:tools" }
       ]
     }
