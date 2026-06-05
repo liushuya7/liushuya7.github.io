@@ -7,7 +7,7 @@
         { "name": "Sensor Fusion", "level": 3, "icon": "mdi:merge" },
         { "name": "Real-Time Control", "level": 3, "icon": "mdi:car-cruise-control" },
         { "name": "Motion Planning", "level": 3, "icon": "mdi:robot-industrial-outline" },
-        { "name": "Autonomous Navigation", "level": 2, "icon": "mdi:map-marker-path" }
+        { "name": "Autonomous Navigation", "level": 3, "icon": "mdi:map-marker-path" }
       ]
     },
     {
